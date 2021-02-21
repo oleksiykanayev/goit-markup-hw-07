@@ -1,0 +1,39 @@
+.solution {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--bgrd-color), var(--bgrd-color)),
+    url(../image/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--back1-color);
+  text-align: center;
+}
+.solution-title {
+  margin-bottom: 30px;
+  color: var(--main-lite-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.solution-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-lite-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
