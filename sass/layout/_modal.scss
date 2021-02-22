@@ -144,49 +144,11 @@ transform: translate(-50%, -50%) scale(1.2);
   border: 2px solid var(--accent-color);
   cursor: pointer;  
 }
- 
-
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
 
 .modal-form-link {
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 4px;
-}
-
-.modal-form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  min-height: 50px;
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  padding: 12px 16px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--main-lite-color);
-  background-color: var(--accent-color);
-  transition: box-shadow 250ms var(--cubic-effect);
-  cursor: pointer;
-  align-self: center;
-}
-
-.modal-form-btn:focus,
-.modal-form-btn:hover {
- box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
  .button-close {
   display: block;

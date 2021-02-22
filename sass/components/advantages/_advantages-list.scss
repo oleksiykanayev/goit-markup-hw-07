@@ -1,0 +1,43 @@
+.advantages-list {
+  display: flex;
+}
+.card {
+  min-width: 270px;
+}
+.card:not(:last-child) {
+  margin-right: 30px;
+}
+.card::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--back2-color);
+}
+.icon-antena::before {
+  background-image: url(../image/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../image/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../image/diagram.svg);
+}
+.icon-astro::before {
+  background-image: url(../image/astronaut.svg);
+}
+.advantages-list .title {
+  margin-bottom: 10px;
+  color: var(--sec-textcolor);
+
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+}
+.advantages-list {
+  font-weight: normal;
+  line-height: 1.71;
+}

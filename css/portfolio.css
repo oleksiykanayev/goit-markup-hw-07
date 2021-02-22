@@ -207,6 +207,13 @@ body {
   margin-right: 8px;
 }
 
+.examples-button:hover,
+.examples-button:focus {
+  background-color: var(--accent-color);
+  color: var(--main-lite-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .examples-list {
   display: flex;
   flex-wrap: wrap;
@@ -267,13 +274,6 @@ body {
   color: var(--main-textcolor);
 }
 
-.examples-button:hover,
-.examples-button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-lite-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .examples-list {
   font-size: 16px;
   line-height: 1.875;
@@ -298,8 +298,16 @@ body {
   display: flex;
 }
 
-.basement-contacts {
-  margin-right: 70px;
+.connect {
+  margin-bottom: 20px;
+  margin-top: 12px;
+  width: 145px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--main-lite-color);
 }
 
 .basement-logo {
@@ -312,6 +320,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.basement-contacts {
+  margin-right: 70px;
 }
 
 address {
@@ -347,18 +359,6 @@ address {
 .basement-contacttel:hover,
 .basement-contactmail:focus,
 .basement-contacttel:focus {
-  color: var(--main-lite-color);
-}
-
-.connect {
-  margin-bottom: 20px;
-  margin-top: 12px;
-  width: 145px;
-  height: 16px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-transform: uppercase;
   color: var(--main-lite-color);
 }
 

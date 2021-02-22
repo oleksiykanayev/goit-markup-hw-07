@@ -1,0 +1,37 @@
+.basement-contacts {
+  margin-right: 70px;
+}
+address {
+  font-style: normal;
+}
+.basement-address {
+  display: inline-block;
+  min-width: 231px;
+  margin-bottom: 9px;
+  color: var(--main-lite-color);
+
+  line-height: 1.71;
+}
+.basement-contactmail {
+  display: inline-block;
+  min-width: 231px;
+  margin-bottom: 9px;
+  color: var(--basecont-color);
+  transition: color 250ms var(--cubic-effect);
+
+  line-height: 1.71;
+}
+.basement-contacttel {
+  display: inline-block;
+  min-width: 231px;
+  color: var(--basecont-color);
+  transition: color 250ms var(--cubic-effect);
+
+  line-height: 1.71;
+}
+.basement-contactmail:hover,
+.basement-contacttel:hover,
+.basement-contactmail:focus,
+.basement-contacttel:focus {
+color: var(--main-lite-color);
+}

@@ -1,5 +1,16 @@
 @import "./base/variables";
 @import "./base/common";
+@import "./base/container";
 @import "./layout/header";
-@import "./pages/portfolio";
+@import "./components/header/logo-header";
+@import "./components/header/site-nav";
+@import "./components/header/contact-nav";
+@import "./layout/portfolio";
+@import "./components/ex-butt-list";
+@import "./components/ex-card";
 @import "./layout/footer";
+@import "./components/footer/logo-footer";
+@import "./components/footer/footer-contacts";
+@import "./components/footer/footer-social-list";
+@import "./components/footer/footer-form";
+@import "./components/footer/footer-btn";

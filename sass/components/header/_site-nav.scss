@@ -1,0 +1,17 @@
+.site-nav {
+  display: flex;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--sec-textcolor);
+  transition: color 250ms var(--cubic-effect);
+
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+.site-nav .snav-link:not(:last-child) {
+  margin-right: 50px;
+}

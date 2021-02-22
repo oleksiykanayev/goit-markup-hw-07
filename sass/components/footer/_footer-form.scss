@@ -1,0 +1,32 @@
+.connect-form {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  width: 219px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--main-lite-color);
+}
+.futer-form {
+  display: flex;
+}
+.futer-form-input {
+  min-width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--back1-color);
+  color: var(--main-lite-color);
+  padding-left: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*.futer-form-input::placeholder {
+  color: var(--basecont-color);
+  font-size: 16px;
+  line-height: 1.25;
+}*/
