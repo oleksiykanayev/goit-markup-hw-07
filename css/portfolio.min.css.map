@@ -6,7 +6,7 @@
         "../sass/base/_variables.scss",
         "../sass/base/_common.scss",
         "../sass/layout/_header.scss",
-        "../sass/layout/_portfolio.scss",
+        "../sass/pages/_portfolio.scss",
         "../sass/layout/_footer.scss"
     ],
     "names": [],
