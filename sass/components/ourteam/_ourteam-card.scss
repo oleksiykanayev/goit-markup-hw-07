@@ -1,29 +1,34 @@
-.ourteam-list {
-  display: flex;
-  justify-content: space-between;
-}
-.team-card {
-  background-color: var(--main-lite-color);
-  border: 1px solid var(--bord-port-color);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 4px 4px var(--teamshad-color);
-  border-radius: 4px;
-}
-.team-textblock {
-  padding: 30px 32px;
-}
-.ourteam-list .title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  color: var(--sec-textcolor);
+.ourteam {
+  &-profession {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.188;
+    & .title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: var(--sec-textcolor);
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.188;
+    }
+  }
 }
-.ourteam-profession {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
+.team {
+  &-card {
+    background-color: var(--main-lite-color);
+    border: 1px solid var(--bord-port-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px var(--teamshad-color);
+    border-radius: 4px;
+  }
+  &-textblock {
+    padding: 30px 32px;
+  }
 }

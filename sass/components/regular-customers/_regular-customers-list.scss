@@ -2,32 +2,36 @@
   display: flex;
   justify-content: space-between;
 }
-.regcust-icon {
-  fill: var(--iconteam-color);
-  transition: fill 250ms var(--cubic-effect);
-}
-.regcust-item {
-  display: flex;
-  min-width: 170px;
-  height: 90px;
-}
-.regcust-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--iconteam-color);
-  border-radius: 4px;
-  transition: border 250ms var(--cubic-effect);
-  transition: border-color 250ms var(--cubic-effect);
-}
-.regcust-link:hover,
-.regcust-link:focus {
-  border: 1px solid var(--accent-color);
-  border-color: var(--accent-color);
-}
-.regcust-link:hover .regcust-icon,
-.regcust-link:focus .regcust-icon {
-  fill: var(--accent-color);
+.regcust {
+  &-icon {
+    fill: var(--iconteam-color);
+    transition: fill 250ms var(--cubic-effect);
+  }
+  &-item {
+    display: flex;
+    min-width: 170px;
+    height: 90px;
+  }
+  &-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--iconteam-color);
+    border-radius: 4px;
+    transition: border 250ms var(--cubic-effect);
+    transition: border-color 250ms var(--cubic-effect);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    &:hover .regcust-icon,
+    &:focus .regcust-icon {
+      fill: var(--accent-color);
+    }
+  }
 }

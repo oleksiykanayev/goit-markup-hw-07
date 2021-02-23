@@ -18,20 +18,22 @@ address {
   margin-bottom: 9px;
   color: var(--basecont-color);
   transition: color 250ms var(--cubic-effect);
-
   line-height: 1.71;
+
+  &:hover,
+  &:focus {
+    color: var(--main-lite-color);
+  }
 }
 .basement-contacttel {
   display: inline-block;
   min-width: 231px;
   color: var(--basecont-color);
   transition: color 250ms var(--cubic-effect);
-
   line-height: 1.71;
-}
-.basement-contactmail:hover,
-.basement-contacttel:hover,
-.basement-contactmail:focus,
-.basement-contacttel:focus {
-color: var(--main-lite-color);
+
+  &:hover,
+  &:focus {
+    color: var(--main-lite-color);
+  }
 }

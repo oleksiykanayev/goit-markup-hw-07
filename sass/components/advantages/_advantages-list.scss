@@ -4,13 +4,13 @@
   line-height: 1.71;
 
   & .title {
-  margin-bottom: 10px;
-  color: var(--sec-textcolor);
+    margin-bottom: 10px;
+    color: var(--sec-textcolor);
 
-  font-weight: 700;
-  line-height: 1.143;
-  text-transform: uppercase;
-}
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+  }
 }
 .card {
   min-width: 270px;
@@ -31,15 +31,15 @@
 }
 .icon {
   &-antena::before {
-  background-image: url(../image/antenna.svg);
-}
-&-clock::before {
-  background-image: url(../image/clock.svg);
-}
-&-diagram::before {
-  background-image: url(../image/diagram.svg);
-}
-&-astro::before {
-  background-image: url(../image/astronaut.svg);
-}
+    background-image: url(../image/antenna.svg);
+  }
+  &-clock::before {
+    background-image: url(../image/clock.svg);
+  }
+  &-diagram::before {
+    background-image: url(../image/diagram.svg);
+  }
+  &-astro::before {
+    background-image: url(../image/astronaut.svg);
+  }
 }
