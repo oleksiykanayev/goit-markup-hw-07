@@ -7,15 +7,18 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--cubic-effect);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
 }
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.backdrop.is-hidden .modal {
-transform: translate(-50%, -50%) scale(1.2);
-}
-.modal { 
+
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,7 +32,7 @@ transform: translate(-50%, -50%) scale(1.2);
   background-color: var(--main-lite-color);
   border-radius: 4px;
   padding: 40px;
- }
+}
 
 .modal-form {
   display: flex;
@@ -57,26 +60,26 @@ transform: translate(-50%, -50%) scale(1.2);
   margin-bottom: 0px;
   transition: border-color 250ms var(--cubic-effect);
   cursor: pointer;
-}
-.modal-form-input-label {
-  font-size: 12px;
-  line-height: 1.172;
-  margin-bottom: 10px;
-}
 
-.modal-form-input-wrapper {
-  display: block;
-  position: relative;
-}
+  &-label {
+    font-size: 12px;
+    line-height: 1.172;
+    margin-bottom: 10px;
+  }
+  &-wrapper {
+    display: block;
+    position: relative;
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
-}
-
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  &:focus + .modal-form-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-icon {
@@ -102,30 +105,19 @@ transform: translate(-50%, -50%) scale(1.2);
   padding: 12px 16px;
   margin-bottom: 8px;
   cursor: pointer;
-}
 
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  letter-spacing: 0.01em;
-  font-size: 14px;
-  line-height: 1.143;
-}
-
-.modal-form-label-policy::before {
-  display: inline-block;
-  width: 20px;
-  height: 19px;
-  content: "";
-  margin-left: 14px;
-  margin-right: 7px;
-  border: 2px solid var(--sec-textcolor);
-  border-radius: 4px;
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
+    font-size: 14px;
+    line-height: 1.143;
+  }
 }
 
 .modal-form-label-policy {
@@ -133,16 +125,25 @@ transform: translate(-50%, -50%) scale(1.2);
   align-items: center;
   flex-wrap: wrap;
   line-height: 1.71;
-  margin-bottom: 32px; 
-}
+  margin-bottom: 32px;
 
-.modal-form-check-policy:checked + .modal-form-label-policy::before {
-  background-image: url(../image/check.svg);
-}
-
-.modal-form-check-policy:focus + .modal-form-label-policy::before {
-  border: 2px solid var(--accent-color);
-  cursor: pointer;  
+  &::before {
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    content: "";
+    margin-left: 14px;
+    margin-right: 7px;
+    border: 2px solid var(--sec-textcolor);
+    border-radius: 4px;
+  }
+  .modal-form-check-policy:checked + &::before {
+    background-image: url(../image/check.svg);
+  }
+  .modal-form-check-policy:focus + &::before {
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+  }
 }
 
 .modal-form-link {
@@ -150,7 +151,7 @@ transform: translate(-50%, -50%) scale(1.2);
   text-decoration: underline;
   margin-left: 4px;
 }
- .button-close {
+.button-close {
   display: block;
   position: absolute;
   top: 8px;
@@ -160,11 +161,11 @@ transform: translate(-50%, -50%) scale(1.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--main-lite-color);
-   background-image: url(../image/close.svg);
+  background-image: url(../image/close.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
- .button-close:focus {
+.button-close:focus {
   background-image: url(../image/close-r.svg);
- }
+}
