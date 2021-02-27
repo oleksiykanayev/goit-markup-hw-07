@@ -11,14 +11,14 @@
         "../sass/components/header/_contact-nav.scss",
         "../sass/components/_ex-butt-list.scss",
         "../sass/components/_ex-card.scss",
-        "../sass/components/footer/_logo-footer.scss",
-        "../sass/components/footer/_footer-contacts.scss",
-        "../sass/components/footer/_footer-social-list.scss",
-        "../sass/components/footer/_footer-form.scss",
-        "../sass/components/footer/_footer-btn.scss",
+        "../sass/components/baseline/_logo-baseline.scss",
+        "../sass/components/baseline/_baseline-contacts.scss",
+        "../sass/components/baseline/_baseline-social-list.scss",
+        "../sass/components/baseline/_baseline-form.scss",
+        "../sass/components/baseline/_baseline-btn.scss",
         "../sass/layout/_header.scss",
         "../sass/layout/_portfolio.scss",
-        "../sass/layout/_footer.scss"
+        "../sass/layout/_baseline.scss"
     ],
     "names": [],
     "file": "portfolio.css"
